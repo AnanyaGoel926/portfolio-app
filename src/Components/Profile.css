@@ -1,0 +1,142 @@
+.Profile {
+  background-color: whitesmoke;
+  height: auto;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Profile img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: row-reverse;
+  margin-top: 100px;
+}
+
+.container img {
+  max-height: 500px;
+  max-width: 500px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  transition: max-width 0.5s, max-height 0.5s;
+}
+
+.text-container {
+  flex: 1;
+  text-align: center;
+  margin-right: 50px; 
+}
+
+.container h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  margin-top: -100px;
+}
+
+.container h1 span {
+  color: #e1c7eb;
+}
+
+.container h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #e1c7eb;
+}
+
+.container h2 span {
+  color: #333;
+}
+
+.container p.intro {
+  color: #878e99;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-left: 10px;
+  word-wrap: break-word;
+}
+
+.container button {
+  margin-top: 10px;
+  margin-bottom: -20px;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.container .resume-button {
+  margin-left: 20px;
+}
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .container img {
+    max-height: 300px;
+    max-width: 300px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    transition: max-width 0.5s, max-height 0.5s;
+  }
+  .text-container {
+    margin-top: 100px; 
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .container img {
+    max-height: 400px;
+    max-width: 400px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    transition: max-width 0.5s, max-height 0.5s;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .container img {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    max-height: 400px;
+    max-width: 400px;
+  }
+
+  .container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    margin-top: -190px;
+  }
+
+  .container h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e1c7eb;
+  }
+
+  .text-container {
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  .container p.intro {
+    text-align: center;
+    padding-left: 0.5rem;
+  }
+}
